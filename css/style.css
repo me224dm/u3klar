@@ -18,13 +18,13 @@ body {
     grid-template-areas: 
     "nav    nav     nav     nav"
     "header header header header"
-    ".      main    main    ."
-    "footer footer footer footer";
+    "aside   main   main   main"
+    "footer footer  footer  footer";
 }
 
 nav {
     grid-area: nav;
-    background-color: rgb(143, 143, 163);
+    background-color:  #17a1a1;
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    justify-content: flex-end;
+    justify-content: start;
 }
 
 nav a {
@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-    background-color: darkcyan;
+    background-color: #008b8b;
     color: white;
 }
 
@@ -54,7 +54,8 @@ nav a:hover, nav a:active {
 
 header {
     grid-area: header;
-    background-color: burlywood;
+    background-color: #deb887;
+    position: sticky;
 }
 
 header h1 {
@@ -64,7 +65,11 @@ header h1 {
 
 main {
     grid-area: main;
-    background-color: cadetblue;
+    background-color: #5f9ea0;
     padding: 10px;
+}
+
+aside {
+    background-color: #d49e85;
 }
 

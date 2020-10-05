@@ -14,7 +14,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: auto minmax(300px,800px) 200px auto;
-    grid-template-rows: min-content 100px auto 70px;
+    grid-template-rows: min-content 90px auto 60px;
     grid-template-areas: 
     "nav    nav     nav     nav"
     "header header header header"
@@ -23,6 +23,7 @@ body {
 }
 
 nav {
+    font-size: 10px;
     grid-area: nav;
     background-color:  #17a1a1;
 }
@@ -58,6 +59,10 @@ header {
     position: sticky;
 }
 
+#boxmodell {
+color: black;
+}
+
 header h1 {
     max-width: 1000px;
     margin: 0 auto;
@@ -69,7 +74,17 @@ main {
     padding: 10px;
 }
 
+img {
+    max-width: 100%;
+}
+
+#box{
+    float: left;
+    max-width: 100vh;
+}
+
 aside {
     background-color: #d49e85;
+    padding: 10px;
 }
 

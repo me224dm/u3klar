@@ -16,16 +16,17 @@ body {
     grid-template-columns: auto minmax(300px,800px) 200px auto;
     grid-template-rows: min-content 90px auto 60px;
     grid-template-areas: 
-    "nav    nav     nav     nav"
-    "header header header header"
-    "aside   main   main   main"
+    "header header  header  header"
+    "nav    main    main    aside"
+    "nav    main    main    aside"
     "footer footer  footer  footer";
 }
 
 nav {
-    font-size: 10px;
+    font-size: 15px;
     grid-area: nav;
     background-color:  #17a1a1;
+    min-width: 150px;
 }
 
 nav ul {
@@ -33,14 +34,14 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    flex-direction: column;
     justify-content: start;
 }
 
 nav a {
     text-decoration: none;
     display: block;
+    padding-bottom: 20px;
 }
 
 nav a:link, nav a:visited {
@@ -55,8 +56,11 @@ nav a:hover, nav a:active {
 
 header {
     grid-area: header;
+    height: 60px;
     background-color: #deb887;
     position: sticky;
+    top: 0;
+
 }
 
 #boxmodell {
@@ -80,15 +84,25 @@ img {
 
 #box{
     float: left;
-    max-width: 100vh;
+    max-width: 50vh;
 }
 
 aside {
     background-color: #d49e85;
     padding: 10px;
+    grid-area: aside;
 }
 
 footer {
     text-align: center;
-    margin-left: 10px;
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 650) {
+    #menyicon {
+        display: inline-block;
+
+    }
 }

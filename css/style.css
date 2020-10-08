@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+}
+
 html {
     font-size: 16px;
 }
@@ -17,15 +21,15 @@ body {
     grid-template-rows: min-content 90px auto 60px;
     grid-template-areas: 
     "header header  header  header"
-    "nav    main    main    aside"
-    "nav    main    main    aside"
+    "nav    main    main    main"
+    "nav    main    main    main"
     "footer footer  footer  footer";
 }
 
 nav {
     font-size: 15px;
     grid-area: nav;
-    background-color:  #17a1a1;
+    background-color: #17a1a1;
     min-width: 150px;
 }
 
@@ -33,9 +37,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
 }
 
 nav a {
@@ -60,7 +61,8 @@ header {
     background-color: #deb887;
     position: sticky;
     top: 0;
-
+    display: flex;
+    justify-content: center;
 }
 
 #boxmodell {
@@ -76,6 +78,7 @@ main {
     grid-area: main;
     background-color: #5f9ea0;
     padding: 10px;
+    max-width: 100%;
 }
 
 img {
@@ -87,22 +90,25 @@ img {
     max-width: 50vh;
 }
 
-aside {
-    background-color: #d49e85;
-    padding: 10px;
-    grid-area: aside;
+.imggrid {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 footer {
-    text-align: center;
     grid-area: footer;
+    text-align: center;
     background-color: black;
     color: white;
 }
 
-@media screen and (max-width: 650) {
-    #menyicon {
-        display: inline-block;
+/*
+@media screen and (max-width:7500px) 
+bilder display block
 
-    }
-}
+@media screen and (max-width:550px) nav upp högst upp 
+display: flex;
+flex-direction: row;
+justify-content: start;

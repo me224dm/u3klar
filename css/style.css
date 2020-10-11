@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 html, body {
@@ -29,7 +29,7 @@ body {
 nav {
     font-size: 15px;
     grid-area: nav;
-    background-color: #17a1a1;
+    background-color: #867e64;
     min-width: 150px;
 }
 
@@ -46,19 +46,20 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-    background-color: #008b8b;
+    background-color: #867e64;
     color: white;
 }
 
 nav a:hover, nav a:active {
-    background-color: #17a1a1;
-    color: #d6b5b5;
+    background-color: #807964;
+    color: #c0b7b7;
 }
 
 header {
     grid-area: header;
     height: 60px;
-    background-color: #deb887;
+    background-color: #F2EFE9;
+    color:#121013;
     position: sticky;
     top: 0;
     display: flex;
@@ -74,11 +75,19 @@ header h1 {
     margin: 0 auto;
 }
 
+h3 {
+    color: #252627;
+    margin-top: 10px;
+}
+
 main {
     grid-area: main;
-    background-color: #5f9ea0;
+    background-color: #c7ab86;
     padding: 10px;
     max-width: 100%;
+}
+#del2 {
+    clear: both;
 }
 
 img {
@@ -90,11 +99,44 @@ img {
     max-width: 50vh;
 }
 
+#design {
+    float: left;
+    max-width: 30vh;
+    margin: 20px;
+}
+
 .imggrid {
     max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: block;
+}
+
+.aroundbox {
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+}
+
+#exempel {
+    background-color: black;
+    color: white;
+}
+
+.aroundbox div {
+    position: absolute;
+    border: 3px solid black;
+    margin: none;
+    padding: 5px;
+    width: 200px;
+}
+
+#showbox ~ div {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: tranform 1s;
+}
+
+#showbox:checked ~ div{
+    transform: scaleY(1);
 }
 
 footer {
@@ -108,7 +150,6 @@ footer {
     .floatimg {
         float: none;
     }
-    
 }
 
 @media screen and (max-width: 650px) {
@@ -120,18 +161,17 @@ footer {
         justify-content: left;
         padding-left: 10px;
     }
-/*
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        gap: 20px;
-    }
-*/
 }
 
 @media screen and (max-width: 850px) {
     .imggrid {
         display: block;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #design {
+        float: none;
+        max-width: 100%;
     }
 }

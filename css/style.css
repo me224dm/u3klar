@@ -27,10 +27,11 @@ body {
 }
 
 nav {
-    font-size: 15px;
+    font-size: 18px;
     grid-area: nav;
-    background-color: #867e64;
+    background-color: #7c9faf;
     min-width: 150px;
+    max-width: 100%;
 }
 
 nav ul {
@@ -46,12 +47,12 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-    background-color: #867e64;
+    background-color: #7c9faf;
     color: white;
 }
 
 nav a:hover, nav a:active {
-    background-color: #807964;
+    background-color: #8eb4c5;
     color: #c0b7b7;
 }
 
@@ -82,11 +83,12 @@ h3 {
 
 main {
     grid-area: main;
-    background-color: #c7ab86;
+    background-color: #d0deec;
     padding: 10px;
     max-width: 100%;
 }
-#del2 {
+
+#del2, #contentborder {
     clear: both;
 }
 
@@ -94,9 +96,11 @@ img {
     max-width: 100%;
 }
 
-#box{
+#box {
     float: left;
     max-width: 50vh;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
 #design {
@@ -117,7 +121,7 @@ img {
 }
 
 #exempel {
-    background-color: black;
+    background-color: #47426d;
     color: white;
 }
 
@@ -126,7 +130,7 @@ img {
     border: 3px solid black;
     margin: none;
     padding: 5px;
-    width: 200px;
+    max-width: 400px;
 }
 
 #showbox ~ div {
@@ -142,8 +146,9 @@ img {
 footer {
     grid-area: footer;
     text-align: center;
-    background-color: black;
+    background-color: #424444;
     color: white;
+    padding: 20px;
 }
 
 @media screen and (max-width: 850px) {

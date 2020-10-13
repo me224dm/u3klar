@@ -20,11 +20,14 @@
         </div>
     </header>
     <main>
-    
         <h2>Vad är boxmodellen?</h2>
         <div id="wrapper">    
             <div id="box"><img src="img/boxmodell.png" alt="förklaring av boxmodellen"></div>
-            <p>Boxmodellen är en modell som skapats för att förklara element i CSS. Allt i Css är inom en rektangulär eller kvadratisk box som utgörs av innehåll. Det finns till för att specificera storlek på element och det runt innehållet. Det som går att förändra är Width, height, margin, padding. Med hjälp av att förändra något av dessa förändras också den totala bredden.</p> 
+            <p>Boxmodellen är en modell som skapats för att förklara element i CSS. Allt i Css är inom en rektangulär eller kvadratisk box som utgörs av innehåll. Det finns till för att specificera storlek på element och det runt innehållet. Det som går att förändra är Width, height, margin, padding. Med hjälp av att förändra något av dessa förändras också den totala bredden.</p>
+        <br>
+        <h4>CSS-egenskaper i Boxmodellen</h4>
+            <p>Width, Height, Border, Padding och Margin är de egenskaper som kan påverkas och modifieras i Boxmodellen. Elementets innehåll kan justeras med hjälp av de width och height. Innehållet kommer då bli större eller mindre beroende på vilket värde som bestäms efteråt. Utanför innehållet kan en kantlinje bestämmas med hjälp av border. Exempel på egenskaper som kan bestämmas i border är hur kantens utseende, om den ska ha heldragna linjer eller inte, och färg. Mellan innehållet och kantlinjen finns det ett utrymme som kallas för padding. Om det angivna värdet av padding är 0 så kommer innehållet nudda vid starten av boxen. Utanför boxens kant finns margin. Denna separerar elementen ifrån varandra. Marginalen överlappas om boxarna sitter över varandra men adderas ihop när det sitter på bredden. Alla dessa egenskaper gör det möjligt att placera innehåll på texten som du vill. 
+            </p>
             <section id="contentborder">
             <h3>Content-box och border-box </h3>
             <p>Content-box är default inställningen hos CSS där innehållets bredd påverkas av alla elementets egenskaper. Om innehållet är 50px och border och padding specificeras kommer boxens totala bredd bli större än innehållets sagda bredd. Detta skiljer sig från border-box där de värden som angetts för width och height är den som specificerar den totala bredden. Detta gör det enklare att veta vad elementets bredd kommer vara utan räkna ut den bredd som adderas av alla andra egenskaper i content-box.</p>

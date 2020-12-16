@@ -63,8 +63,6 @@ header {
     color:#121013;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: center;
 }
 
 #boxmodell {
@@ -74,6 +72,8 @@ color: black;
 header h1 {
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    text-align: center;
 }
 
 h3 {
@@ -88,8 +88,23 @@ main {
     max-width: 100%;
 }
 
-#del2, #contentborder {
+#del2 {
     clear: both;
+}
+
+#contentborder {
+    clear: both;
+    display: flex;
+    justify-content: start;
+    max-width:800px;
+    padding:10px 5px;
+}
+.boxes {
+    padding:20px;
+    margin:0 5px;
+    width:25%;
+    background:#65c2ed;
+    color:#004565;
 }
 
 img {
@@ -122,7 +137,6 @@ img {
 }
 
 .aroundbox div {
-    
     position: absolute;
     border: 3px solid black;
     margin: 0;
